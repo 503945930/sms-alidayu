@@ -1,0 +1,45 @@
+{
+  "name": "mdc-sms-alida",
+  "version": "1.0.0",
+  "description": "Email adapter for MDC.",
+  "main": "index.js",
+  "scripts": {
+    "standard": "./node_modules/.bin/standard",
+    "test": "./node_modules/.bin/ava  --timeout 200000"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "MDC"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "pre-git": "^3.14.0",
+    "should": "^11.2.1",
+    "urllib": "^2.21.2"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2"
+  },
+  "config": {
+    "pre-git": {
+      "commit-msg": "",
+      "pre-commit": [
+        "npm run standard",
+        "npm test"
+      ],
+      "pre-push": [],
+      "post-commit": [],
+      "post-checkou": [],
+      "post-merge": []
+    }
+  }
+}
